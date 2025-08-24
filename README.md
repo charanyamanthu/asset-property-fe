@@ -1,70 +1,134 @@
-# Getting Started with Create React App
+# Asset Property Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A comprehensive React-based property rental platform built with modern web technologies.
 
-## Available Scripts
+## 🏠 Features
 
-In the project directory, you can run:
+### Core Components
+- **Property Search** - Browse and search available properties
+- **Property Details** - Comprehensive property information and images
+- **Contact Agent** - Direct communication with property agents
+- **About Us** - Company information and mission
+- **Property Form** - Submit new properties for listing
 
-### `npm start`
+### Technical Features
+- **Responsive Design** - Works on all devices (desktop, tablet, mobile)
+- **Modern UI/UX** - Clean, professional interface with smooth animations
+- **React Components** - Modular, reusable component architecture
+- **CSS Grid & Flexbox** - Modern layout techniques
+- **Form Validation** - Client-side form validation and error handling
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🚀 Getting Started
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Prerequisites
+- Node.js (v14 or higher)
+- npm or yarn package manager
 
-### `npm test`
+### Installation
+```bash
+# Clone the repository
+git clone https://github.com/charanyamanthu/asset-property-fe.git
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Navigate to project directory
+cd asset-property-fe
 
-### `npm run build`
+# Install dependencies
+npm install
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Start development server
+npm start
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Available Scripts
+- `npm start` - Start development server
+- `npm build` - Build for production
+- `npm test` - Run test suite
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🎨 Project Structure
 
-### `npm run eject`
+```
+src/
+├── components/          # React components
+│   ├── AboutUs.jsx     # About Us page
+│   ├── PropertyForm.jsx # Property submission form
+│   ├── PropertySearch.js # Property search functionality
+│   └── ...             # Other components
+├── styles/             # CSS styling files
+├── services/           # API and service functions
+├── utils/              # Utility functions
+└── data/               # Static data and mock data
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🌟 Key Components
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### AboutUs Component
+- Company story and mission
+- Services overview with interactive cards
+- Company values and contact information
+- Responsive design with gradient backgrounds
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### PropertyForm Component
+- Property type selection (apartment, house, condo, studio, villa)
+- Property details (title, price, location, bedrooms, bathrooms)
+- Image upload support
+- Form validation and success messages
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 🎯 Navigation
 
-## Learn More
+The application includes a comprehensive navigation system:
+- **To Rent** - Property search and browsing
+- **About Us** - Company information
+- **Submit Property** - Property submission form
+- **Services** - Available services (under development)
+- **Pricing** - Pricing information (under development)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🖼️ Assets
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Company logo and branding
+- Property images and placeholders
+- Responsive icons and graphics
+- Modern gradient backgrounds
 
-### Code Splitting
+## 🔧 Technologies Used
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- **Frontend**: React.js, CSS3, HTML5
+- **Styling**: Custom CSS with Grid/Flexbox
+- **State Management**: React Hooks
+- **Build Tool**: Create React App
+- **Version Control**: Git & GitHub
 
-### Analyzing the Bundle Size
+## 📱 Responsive Design
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- **Desktop**: Full grid layouts and spacious design
+- **Tablet**: Adjusted spacing and single-column grids
+- **Mobile**: Optimized for small screens with touch-friendly elements
 
-### Making a Progressive Web App
+## 🚀 Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+The application is ready for deployment to various platforms:
+- Netlify
+- Vercel
+- GitHub Pages
+- AWS S3
+- Any static hosting service
 
-### Advanced Configuration
+## 🤝 Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
-### Deployment
+## 📄 License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+This project is licensed under the MIT License.
 
-### `npm run build` fails to minify
+## 📞 Contact
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- **Project Link**: https://github.com/charanyamanthu/asset-property-fe
+- **Company**: Samriddhi Property Solutions
+
+---
+
+**Built with ❤️ using React and modern web technologies**
