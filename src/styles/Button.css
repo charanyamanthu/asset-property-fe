@@ -1,0 +1,86 @@
+.button {
+    width: 100%;
+    height: 56px;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+    gap: 10px;
+    border: 0;
+    border-radius: 12px;
+    background-color: #ffe403;
+    color: #000000;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 21px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #D4AF37; /* Darker, more elegant gold */
+  }
+  
+  .button:active {
+    background-color: #D4AF37;
+  }
+  
+  .button-text {
+    margin-right: 4px;
+  }
+  
+  .button-icon {
+    width: 24px;
+    height: 24px;
+    fill: #000000;
+  }
+  
+  @media (max-width: 768px) {
+    .button {
+      height: 48px;
+      border-radius: 8px;
+    }
+  }
+
+  /* Add this to your existing Button.css file */
+
+.button.loading {
+  opacity: 0.85;
+  cursor: not-allowed;
+  background-color: #e0c100; /* Slightly darker yellow while loading */
+}
+
+.button .spinner {
+  animation: spin 1.5s linear infinite;
+}
+
+.spinner-path {
+  stroke: #ffffff;
+  stroke-linecap: round;
+  animation: spinner-path 1.5s ease-in-out infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spinner-path {
+  0% {
+    stroke-dasharray: 1, 150;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 90, 150;
+    stroke-dashoffset: -35;
+  }
+  100% {
+    stroke-dasharray: 90, 150;
+    stroke-dashoffset: -124;
+  }
+}

@@ -1,0 +1,32 @@
+[
+    {
+      "id": 1,
+      "image": "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YXBhcnRtZW50JTIwJTIwaW50ZXJpb3J8ZW58MHx8MHx8&w=1000&q=80",
+      "price": 2700,
+      "location": "Brixton Hill, London SW2",
+      "beds": 2,
+      "baths": 1,
+      "sqft": 69,
+      "sqftUnit": "FT²",
+      "description": "Stylish loft in the heart of Brixton Village. Immerse yourself in the eclectic atmosphere, enjoy local eateries, and live amidst the energy of one of London's most dynamic neighborhoods.",
+      "propertyType": "Flat",
+      "availability": "Available immediately",
+      "listedDays": 3,
+      "tags": ["Just Posted"]
+    },
+    {
+      "id": 2,
+      "image": "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YXBhcnRtZW50JTIwJTIwaW50ZXJpb3J8ZW58MHx8MHx8&w=1000&q=80",
+      "price": 2500,
+      "location": "Fountain Hill, London SW2",
+      "beds": 3,
+      "baths": 2,
+      "sqft": 92,
+      "sqftUnit": "FT²",
+      "description": "Discover the timeless elegance of this Victorian-era flat in Brixton Hill. With its period features, spacious rooms, and proximity to green spaces, this property offers classic charm with a modern twist.",
+      "propertyType": "House",
+      "availability": "Available immediately",
+      "listedDays": 4,
+      "tags": ["Leased"]
+    }
+  ]

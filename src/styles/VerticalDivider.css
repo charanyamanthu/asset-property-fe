@@ -1,0 +1,26 @@
+.vertical-divider {
+  width: 27px;
+  height: 5px;
+  background-color: #ffe403;
+  margin-top: 4px;
+}
+
+/* Specific styles for the vertical divider in the footer */
+.footer-logo-divider .vertical-divider {
+  width: 27px;
+  height: 5px;
+  background-color: #ffe403;
+  margin: 0; /* Remove default margins in footer context */
+}
+
+@media (max-width: 768px) {
+  .vertical-divider {
+    width: 20px;
+    height: 4px;
+  }
+  
+  .footer-logo-divider .vertical-divider {
+    width: 20px;
+    height: 4px;
+  }
+}

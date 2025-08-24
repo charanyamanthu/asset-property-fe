@@ -1,0 +1,36 @@
+.desktop-nav {
+    display: flex;
+    gap: 20px;
+    z-index: 1;
+    align-items: center;
+  }
+  
+  .mobile-menu-button {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 2;
+  }
+  
+  /* Mobile responsiveness */
+  @media (max-width: 768px) {
+    .desktop-nav {
+      display: none;
+    }
+    
+    .mobile-menu-button {
+      display: block;
+    }
+  }
+  
+  /* Mobile menu items alignment */
+  .mobile-menu-item {
+    text-align: right;
+    width: 100%;
+    padding: 8px 12px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }

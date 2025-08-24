@@ -1,0 +1,113 @@
+.property-card {
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.property-image-container {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.property-image {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.property-image:hover {
+  transform: scale(1.05);
+}
+
+.property-features {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  display: flex;
+  gap: 10px;
+  z-index: 1;
+}
+
+.feature-badge {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+}
+
+.property-details {
+  padding: 15px 15px 0 15px; /* Reduced bottom padding */
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 0;
+}
+
+.property-price {
+  margin-bottom: 5px; /* Reduced from 12px */
+}
+
+.price-value {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.price-per-week {
+  font-size: 14px;
+  margin-left: 5px;
+  color: #666;
+}
+
+.property-location {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #555;
+}
+
+.location-icon {
+  color: #FF00FF;
+  margin-right: 5px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .feature-badge {
+    width: 36px;
+    height: 36px;
+    font-size: 11px;
+  }
+  
+  .price-value {
+    font-size: 20px;
+  }
+  
+  .property-details {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .feature-badge {
+    width: 32px;
+    height: 32px;
+    font-size: 10px;
+  }
+  
+  .property-features {
+    gap: 6px;
+  }
+}

@@ -1,0 +1,345 @@
+/* Global Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Mulish', -apple-system, BlinkMacSystemFont, sans-serif;
+  line-height: 1.5;
+  color: #333;
+  background-color: #f8f8f8;
+}
+
+.app {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header Styles */
+.header {
+  display: flex;
+  align-items: center;
+  padding: 15px 5%;
+  background-color: white;
+  position: relative;
+  overflow: visible;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  z-index: 2;
+}
+
+.logo-circle {
+  position: absolute;
+  top: -180px;
+  left: -180px;
+  width: 400px;
+  height: 400px;
+  background-color: black;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.logo-link {
+  position: absolute;
+  top: 190px;
+  left: 200px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  z-index: 5;
+  text-decoration: none;
+  gap: 10px;
+}
+
+
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo-text {
+  color: #D4AF37; /* Darker, more elegant gold */
+  font-size: 28px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Navigation container to start after circle */
+.nav-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding-left: 220px; /* Position to start exactly where the circle ends */
+}
+
+.nav-links {
+  display: flex;
+  gap: 50px;
+  margin-right: auto;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #05020a;
+  padding: 5px 0;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+.nav-link.active {
+  font-weight: 600;
+}
+
+.nav-link.active::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #5000CA;
+  border-radius: 2px;
+}
+
+.nav-link:hover {
+  color: #3700a1;
+}
+
+.auth-links {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.login-link {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.login-link:hover {
+  color: #000;
+}
+
+.signup-link {
+  background-color: black;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.signup-link:hover {
+  background-color: #333;
+}
+
+.mobile-menu-button {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+/* Main Content Styles */
+.main-content {
+  flex: 1;
+  width: 100%;
+  padding: 30px 5%;
+  z-index: 3;
+}
+
+.content-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.contact-wrapper {
+  flex: 1;
+  min-width: 320px;
+  flex-basis: 600px;
+  position: relative;
+  z-index: 10;
+}
+
+.property-wrapper {
+  flex: 1;
+  min-width: 320px;
+  flex-basis: 400px;
+}
+
+/* Add these styles to your App.css file */
+
+/* Make buttons look like links */
+.nav-link, .logo-link, .footer-link {
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  text-align: left;
+}
+
+/* Existing nav link styles might need adjustment */
+.nav-link {
+  color: #06030b;
+  padding: 5px 0;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #3700a1;
+}
+
+.nav-link.active {
+  font-weight: 600;
+}
+
+.nav-link.active::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #5000CA;
+  margin-top: 3px;
+  border-radius: 2px;
+}
+
+/* Footer link styles */
+.footer-link {
+  color: inherit;
+  text-decoration: none;
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+/* Social link styles */
+.social-link {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.social-link:hover {
+  background-color: #555;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .nav-container {
+    padding-left: 200px; /* Slightly adjusted for medium screens */
+  }
+  
+  .content-container {
+    flex-direction: column-reverse;
+  }
+  
+  .contact-wrapper,
+  .property-wrapper {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 15px 20px;
+  }
+  
+  .logo-circle {
+    width: 300px;
+    height: 300px;
+    top: -150px;
+    left: -150px;
+  }
+  
+  .logo-link {
+    top: 160px;
+    left: 160px;
+  }
+  
+  .nav-container {
+    padding-left: 0; /* Remove padding on mobile */
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+  
+  .mobile-menu-button {
+    display: block;
+    margin-left: auto;
+  }
+  
+  .nav-links,
+  .auth-links {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 0;
+  }
+  
+  .nav-links.mobile-menu-open,
+  .auth-links.mobile-menu-open {
+    display: flex;
+  }
+  
+  .main-content {
+    padding: 20px 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-circle {
+    width: 200px;
+    height: 200px;
+    top: -100px;
+    left: -100px;
+  }
+  
+  .logo-link {
+    top: 110px;
+    left: 110px;
+    font-size: 14px;
+  }
+}
+
+/* Keep the hamburger at the top */
+.mobile-menu-button {
+  position: relative;
+  z-index: 11;
+}
+
+/* Right-align menu items without changing position */
+.nav-links.mobile-menu-open .nav-link {
+  text-align: right;
+  width: 100%;
+}
+
+/* For mobile only - align items to end (right) */
+@media (max-width: 768px) {
+  .nav-links.mobile-menu-open {
+    align-items: flex-end;
+  }
+}

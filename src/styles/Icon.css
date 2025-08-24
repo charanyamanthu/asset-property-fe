@@ -1,0 +1,24 @@
+.home-icon {
+  color: #ffffff;
+  fill: #ffffff;
+  width: 35px;
+  height: 35px;
+}
+
+/* Specific styles for icon in footer */
+.footer .home-icon {
+  width: 35px;
+  height: 35px;
+}
+
+@media (max-width: 768px) {
+  .home-icon {
+    width: 28px;
+    height: 28px;
+  }
+  
+  .footer .home-icon {
+    width: 28px;
+    height: 28px;
+  }
+}

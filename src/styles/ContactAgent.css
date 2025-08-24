@@ -1,0 +1,203 @@
+.contact-container {
+  padding: 30px;
+  width: 100%;
+  position: relative;
+  z-index: 5; /* Higher z-index to ensure it's in front of the black circle */
+  background-color: #ffffff; /* Ensure background is solid */
+  border-radius: 25px; /* Match the card border radius */
+}
+
+.contact-title {
+  color: #030303;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 25px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.form-checkbox {
+  margin-bottom: 20px;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.checkbox-text {
+  margin-left: 8px;
+  font-size: 14px;
+}
+
+.form-group {
+  margin-bottom: 25px;
+  width: 100%;
+}
+
+.input-label {
+  display: block;
+  margin-bottom: 8px;
+  color: #333333;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.input-field {
+  width: 100%;
+  height: 48px;
+  padding: 0 15px;
+  border: none;
+  border-radius: 8px;
+  background-color: #f2f2f2;
+  color: #333;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  outline: none;
+  transition: background-color 0.3s;
+}
+
+.input-field:focus {
+  background-color: #e8e8e8;
+}
+
+.textarea-field {
+  width: 100%;
+  height: 120px;
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  background-color: #f2f2f2;
+  color: #333;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  resize: none;
+  outline: none;
+  transition: background-color 0.3s;
+}
+
+.textarea-field:focus {
+  background-color: #e8e8e8;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .contact-container {
+    padding: 20px;
+  }
+  
+  .contact-title {
+    font-size: 24px;
+  }
+  
+  .input-field,
+  .textarea-field {
+    font-size: 16px; /* Better for mobile input */
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-container {
+    padding: 15px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+}
+
+.status-message {
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.status-message.success {
+  background-color: #e6f7e6;
+  color: #2e7d32;
+  border: 1px solid #c8e6c9;
+}
+
+.status-message.error {
+  background-color: #ffebee;
+  color: #c62828;
+  border: 1px solid #ffcdd2;
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
+.checkbox-group input {
+  margin-right: 10px;
+  margin-top: 3px;
+}
+
+.checkbox-text {
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.loading-spinner {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-top-color: #333;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-right: 8px;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Adjust button styling for loading state */
+.custom-button.loading {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* New styles for legal elements */
+.privacy-policy-notice,
+.data-disclaimer {
+  margin-bottom: 15px;
+  font-size: 13px;
+  color: #666;
+  line-height: 1.4;
+}
+
+.privacy-policy-notice .privacy-link {
+  color: #0066cc;
+  text-decoration: underline;
+}
+
+.thank-you-message {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.thank-you-message h3 {
+  margin-bottom: 15px;
+  color: #2e7d32;
+}
+
+.thank-you-message p {
+  margin-bottom: 25px;
+  line-height: 1.5;
+}
